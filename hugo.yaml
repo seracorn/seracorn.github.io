@@ -1,63 +1,172 @@
 baseURL: "https://seracorn.github.io/"
-title: "我的个人网站"
-languageCode: "zh-cn"
+title: "玉米的个人博客"
 defaultContentLanguage: "zh"
+locale: "zh-CN"
 hasCJKLanguage: true
-theme: "PaperMod"
+timeZone: "Asia/Shanghai"
+theme: "hugo-theme-stack"
+enableRobotsTXT: true
+enableGitInfo: true
 
 pagination:
   pagerSize: 10
 
-params:
-  author: "你的名字"
-  description: "个人履历、项目成果与学习笔记"
-  defaultTheme: "auto"
-  mainSections:
-    - posts
-    - notes
+# 不让 Obsidian 设置、模板和上传失败的临时附件进入网站。
+# Git 的忽略规则还要在第 7 节另行配置。
+ignoreFiles:
+  - '(^|/)\.obsidian(/|$)'
+  - '(^|/)\.trash(/|$)'
+  - '(^|/)_templates(/|$)'
+  - '(^|/)_attachments(/|$)'
 
-  ShowReadingTime: true
-  ShowWordCount: true
-  ShowBreadCrumbs: true
-  ShowPostNavLinks: true
-  ShowCodeCopyButtons: true
-  ShowToc: true
+# 新文章使用固定 slug；改变标题不会改变网址。
+# 现有 my-first-note.md 没有 slug，会回退到标题或文件名规则；
+# 下一节会显式固定它原有的网址。
+permalinks:
+  page:
+    notes: "/notes/:slug/"
+    posts: "/posts/:slug/"
 
-  profileMode:
-    enabled: true
-    title: "这是玉米的个人blog"
-    subtitle: "在这里记录学习、项目与成长"
-    imageUrl: "images/avatar.jpg"
-    imageTitle: "我的头像"
-    imageWidth: 120
-    imageHeight: 120
-    buttons:
-      - name: "个人履历"
-        url: "about/"
-      - name: "学习笔记"
-        url: "notes/"
-
-menu:
-  main:
-    - name: "关于我"
-      url: "/about/"
-      weight: 10
-    - name: "笔记"
-      url: "/notes/"
-      weight: 20
-    - name: "随笔"
-      url: "/posts/"
-      weight: 30
-    - name: "归档"
-      url: "/archives/"
-      weight: 40
-    - name: "搜索"
-      url: "/search/"
-      weight: 50
+taxonomies:
+  category: categories
+  tag: tags
 
 outputs:
   home:
     - HTML
     - RSS
-    - JSON
 
+params:
+  description: "记录学习、思考与成长"
+  mainSections:
+    - notes
+    - posts
+  rssFullContent: true
+
+  sidebar:
+    compact: false
+    subtitle: "记录学习、思考与成长"
+    avatar: "img/avatar.jpg"
+
+  footer:
+    since: 2026
+    customText: ""
+
+  dateFormat:
+    published: "2006-01-02"
+    lastUpdated: "2006-01-02"
+
+  article:
+    math: true
+    toc: true
+    readingTime: true
+    headingAnchor: true
+    license:
+      enabled: false
+
+  widgets:
+    homepage:
+      - type: search
+      - type: categories
+        params:
+          limit: 8
+      - type: tag-cloud
+        params:
+          limit: 15
+    page:
+      - type: toc
+
+  colorScheme:
+    toggle: true
+    default: light
+
+  # 第一轮先不接评论；第 11 节取得真实 ID 后再开启。
+  comments:
+    enabled: false
+    provider: giscus
+    giscus:
+      repo: "seracorn/seracorn.github.io"
+      repoID: ""
+      category: "Announcements"
+      categoryID: ""
+      mapping: "pathname"
+      strict: 1
+      reactionsEnabled: 1
+      emitMetadata: 0
+      inputPosition: "top"
+      lightTheme: "light"
+      darkTheme: "dark_dimmed"
+      lang: "zh-CN"
+      loading: "lazy"
+
+menu:
+  main:
+    - identifier: home
+      name: "首页"
+      url: "/"
+      weight: 10
+      params:
+        icon: home
+    - identifier: notes
+      name: "笔记"
+      url: "/notes/"
+      weight: 20
+      params:
+        icon: categories
+    - identifier: posts
+      name: "随笔"
+      url: "/posts/"
+      weight: 30
+      params:
+        icon: messages
+    - identifier: about
+      name: "关于"
+      url: "/about/"
+      weight: 40
+      params:
+        icon: user
+    - identifier: archives
+      name: "归档"
+      url: "/archives/"
+      weight: 50
+      params:
+        icon: archives
+    - identifier: search
+      name: "搜索"
+      url: "/search/"
+      weight: 60
+      params:
+        icon: search
+  social:
+    - identifier: github
+      name: GitHub
+      url: "https://github.com/seracorn"
+      params:
+        icon: brand-github
+
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['$$', '$$']
+            - ['\[', '\]']
+          inline:
+            - ['$', '$']
+            - ['\(', '\)']
+    renderer:
+      unsafe: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+  highlight:
+    noClasses: false
+    codeFences: true
+    lineNos: false
+
+caches:
+  images:
+    dir: ":cacheDir/images"

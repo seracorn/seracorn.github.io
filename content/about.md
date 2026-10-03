@@ -1,19 +1,22 @@
 ---
-title: "关于我"
+title: "关于"
+url: "/about/"
 draft: false
-showToc: false
+toc: true
+comments: false
+readingTime: false
 ---
 
-你好，我是……
+这里是玉米的博客。
 
 ## 教育与工作经历
 
-在这里填写你的经历。
+\
 
 ## 项目与成果
 
-在这里介绍你的代表项目、承担的工作和取得的成果。
+静待花开……
 
 ## 联系方式
 
-在这里填写你愿意公开的联系方式。
+邮箱📮：staygold_224@qq.com

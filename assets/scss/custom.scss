@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Corn Bright";
+  src: url("/fonts/LXGWBright-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --base-font-family: "Corn Bright", -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "Microsoft YaHei", sans-serif;
+  --article-font-family: "Songti SC", "STSong", "Noto Serif CJK SC",
+    "Source Han Serif SC", "SimSun", serif;
+  --code-font-family: "SFMono-Regular", Menlo, Consolas, monospace;
+  --article-line-height: 1.85;
+  --article-font-size: 1.8rem;
+  --card-border-radius: 12px;
+}
+
+:root[data-scheme="light"] {
+  --body-background: #f5f5fa;
+  --card-background: #ffffff;
+  --card-text-color-main: #252936;
+  --accent-color: #3c536b;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --article-font-size: 1.9rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container.extended {
+    max-width: 1480px;
+    --left-sidebar-max-width: 200px;
+    --right-sidebar-max-width: 260px;
+  }
+}
+
+.article-title {
+  font-family: var(--article-font-family);
+  line-height: 1.45;
+}
+
+.article-content {
+  overflow-wrap: break-word;
+}

@@ -3,7 +3,10 @@ title: "玉米的第一篇博客"
 date: 2026-10-02
 draft: false
 tags: ["学习记录"]
+categories: ["学习记录"]
 description: "测试玉米的个人知识库"
+slug: "my-first-note"
+url: "/notes/my-first-note/"
 ---
 
 ## 说明

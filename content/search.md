@@ -1,6 +1,11 @@
 ---
 title: "搜索"
+type: "page"
 layout: "search"
+url: "/search/"
 draft: false
-placeholder: "搜索笔记或文章"
+outputs:
+  - HTML
+  - JSON
+comments: false
 ---
