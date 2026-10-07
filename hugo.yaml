@@ -86,9 +86,9 @@ params:
     provider: giscus
     giscus:
       repo: "seracorn/seracorn.github.io"
-      repoID: ""
+      repoID: "R_kgDOU5IJ1A"
       category: "Announcements"
-      categoryID: ""
+      categoryID: "DIC_kwDOU5IJ1M4DHOdI"
       mapping: "pathname"
       strict: 1
       reactionsEnabled: 1
