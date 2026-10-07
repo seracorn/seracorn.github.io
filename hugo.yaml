@@ -157,7 +157,7 @@ markup:
             - ['$', '$']
             - ['\(', '\)']
     renderer:
-      unsafe: false
+      unsafe: true
   tableOfContents:
     startLevel: 2
     endLevel: 4

@@ -26,7 +26,10 @@ url: /notes/my-first-note/
 
 ## test of picgo
 
+粘贴测试：
 ![山山兔会自己增殖！](https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg)
+测试 `html` 缩放功能：
+<img src="https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg" style="zoom:50%;" />
 
 ## test of $\LaTeX$
 
