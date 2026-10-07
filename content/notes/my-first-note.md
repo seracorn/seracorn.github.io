@@ -40,6 +40,7 @@ url: /notes/my-first-note/
 <img src="图片网址" alt="图片说明" style="width:50%; height:auto; display:block; margin:0 auto;" />
 ```
 <img src="https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg" alt="山山兔width0.5" style="width:50%; height:auto; display:block; margin:0 auto;" />
+
 ## test of $\LaTeX$
 
 行内公式：$E = mc^2$。
