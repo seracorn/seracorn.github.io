@@ -4,9 +4,10 @@ date: 2026-10-02
 draft: false
 tags:
   - 学习记录
+  - 测试
 categories:
   - 学习记录
-description: test
+description: test&简单说明
 slug: my-first-note
 url: /notes/my-first-note/
 ---
@@ -22,3 +23,30 @@ url: /notes/my-first-note/
 ## 接下来的计划
 
 本次在macOS系统搭建个人博客的过程将整理成文档上传此处，参考了两个Windows系统搭建个人博客的指引文档。后续会上传曾作为pdf分享的零散课程资料源码，以供同专业学生在各个类型设备进行更轻量便捷的查阅。
+
+## test of picgo
+
+![山山兔会自己增殖！](https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg)
+
+## test of $\LaTeX$
+
+行内公式：$E = mc^2$。
+
+独立公式：
+
+$$
+\int_0^1 x^2\,\mathrm{d}x = \frac{1}{3}
+$$
+
+矩阵：
+
+$$
+\begin{bmatrix}
+1 & 2 \\
+3 & 4
+\end{bmatrix}
+$$
+
+## test of sync
+
+这是一处修改，我们期待十分钟后它将自动保存。
