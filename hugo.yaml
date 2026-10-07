@@ -82,7 +82,7 @@ params:
 
   # 第一轮先不接评论；第 11 节取得真实 ID 后再开启。
   comments:
-    enabled: false
+    enabled: true
     provider: giscus
     giscus:
       repo: "seracorn/seracorn.github.io"
