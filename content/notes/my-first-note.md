@@ -26,7 +26,7 @@ url: /notes/my-first-note/
 
 ## test of picgo
 
-粘贴测试：
+来自剪贴板的粘贴：
 ![山山兔会自己增殖！](https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg)
 
 按正常显示尺寸缩放至一半：
@@ -61,4 +61,4 @@ $$
 
 ## test of sync
 
-这是一处修改，我们期待十分钟后它将自动保存。
+这是一处20261007-1524的修改，我们期待十分钟后它将自动保存。
