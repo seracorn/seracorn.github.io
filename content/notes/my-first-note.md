@@ -28,10 +28,18 @@ url: /notes/my-first-note/
 
 粘贴测试：
 ![山山兔会自己增殖！](https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg)
-测试 `html` 缩放功能：
-<img src="https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg" style="zoom:50%;" />
-按页面kuan du
 
+按正常显示尺寸缩放至一半：
+```
+<img src="图片网址" alt="图片说明" style="zoom:50%;" />
+```
+<img src="https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg" alt="山山兔2" style="zoom:50%;" />
+
+按页面宽度缩放：
+```
+<img src="图片网址" alt="图片说明" style="width:50%; height:auto; display:block; margin:0 auto;" />
+```
+<img src="https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/d82b1d09512fc0be74ae81c5aeddeb12.jpeg" alt="山山兔width0.5" style="width:50%; height:auto; display:block; margin:0 auto;" />
 ## test of $\LaTeX$
 
 行内公式：$E = mc^2$。
