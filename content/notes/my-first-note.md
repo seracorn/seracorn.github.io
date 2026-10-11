@@ -67,5 +67,7 @@ $$
 ## 快捷键备忘
 
 新建笔记：`cmd+ctrl+N`
+
 新建随笔：`cmd+opt+N`
+
 ![](https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/20261011162951408.png)
