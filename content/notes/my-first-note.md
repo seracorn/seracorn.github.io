@@ -70,4 +70,4 @@ $$
 
 新建随笔：`cmd+opt+N`
 
-![](https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/20261011162951408.png)
+<img src="https://elcorn-img.oss-cn-beijing.aliyuncs.com/img/20261011162951408.png" alt="quickadd" style="width:80%; height:auto; display:block; margin:0 auto;" />
