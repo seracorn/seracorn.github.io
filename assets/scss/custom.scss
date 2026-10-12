@@ -46,3 +46,102 @@
 .article-content {
   overflow-wrap: break-word;
 }
+
+/* ===== 代码阅读样式：开始 ===== */
+
+.article-content {
+  /* 行内代码：正文的 85%，减少底色占用的空间 */
+  :not(pre) > code {
+    font-size: 0.85em;
+    padding: 0.08em 0.3em;
+    border-radius: 4px;
+  }
+
+  /* 代码块：约 15px，保持缩进与横向滚动 */
+  pre {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    white-space: pre;
+    word-break: normal;
+    overflow-wrap: normal;
+    overflow-x: auto;
+  }
+
+  /* 避免代码块内部再次缩小字号 */
+  pre code {
+    font-size: inherit;
+    line-height: inherit;
+    white-space: inherit;
+    word-break: normal;
+    overflow-wrap: normal;
+  }
+
+  /* 普通代码块的留白 */
+  > pre {
+    padding: 18px 20px;
+  }
+
+  /* 高亮代码块：顶部给复制按钮留出空间 */
+  .highlight {
+    padding: 34px 20px 18px;
+  }
+
+  .highlight pre {
+    padding: 0;
+    margin: 0;
+  }
+
+  .copyCodeButton {
+    top: 6px;
+    right: 8px;
+    padding: 4px 8px;
+    font-size: 1.2rem;
+  }
+}
+
+/* 浅色模式：浅底深字 */
+:root[data-scheme="light"] {
+  --code-background-color: #f0f2f5;
+  --code-text-color: #414b5a;
+  --pre-background-color: #f7f8fa;
+  --pre-text-color: #354052;
+
+  .article-content .chroma {
+    color: #354052;
+    background-color: transparent;
+
+    /* 关键字、标签、属性：沉稳的蓝色 */
+    .k, .kc, .kd, .kn, .kp, .kr, .kt,
+    .nt, .na {
+      color: #355f8a;
+    }
+
+    /* 字符串：棕色 */
+    .s, .sa, .sb, .sc, .dl, .sd,
+    .s1, .s2, .sh, .si, .sx, .sr, .ss, .ld {
+      color: #865b32;
+    }
+
+    /* 数字与转义字符：紫色 */
+    .m, .mb, .mf, .mh, .mi, .il, .mo, .l, .se {
+      color: #70518c;
+    }
+
+    /* 函数与类型：深青色 */
+    .nc, .nd, .ne, .nf, .nx {
+      color: #356b65;
+    }
+
+    /* 运算符与标点：深灰色 */
+    .o, .ow, .p {
+      color: #4b5563;
+    }
+
+    /* 注释：可读的灰色 */
+    .c, .ch, .cm, .c1, .cs, .cp, .cpf {
+      color: #68717e;
+    }
+  }
+}
+
+/* ===== 代码阅读样式：结束 ===== */
